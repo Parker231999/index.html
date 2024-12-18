@@ -1,0 +1,225 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    font-size: 17px;
+}
+
+/* Navigation Bar */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #222;
+    z-index: 1000;
+}
+
+nav {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff7f7f;
+}
+
+nav a.active {
+    border-bottom: 3px solid #ff7f7f;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(to bottom, #d7aefb, #fbc2eb);
+    text-align: center;
+    padding: 80px px;
+    color: white;
+}
+
+.glowing-text {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: glowing-text-animation 1.5s infinite alternate;
+}
+
+@keyframes glowing-text-animation {
+    0% {
+        text-shadow: 0 0 10px #ff7f7f, 0 0 20px #ff7f7f, 0 0 30px #ff7f7f, 0 0 40px #ff7f7f;
+    }
+    100% {
+        text-shadow: 0 0 15px #ff7f7f, 0 0 25px #ff7f7f, 0 0 35px #ff7f7f, 0 0 45px #ff7f7f;
+    }
+}
+
+#hero h3 {
+    font-size: 55rem;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.btn {
+    background-color: #ff7f7f;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e76d6d;
+}
+
+/* What I Offer Section */
+#what-i-offer {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+.card h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-shadow: 300px
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Form Styling */
+form {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+form input[type="submit"] {
+    background-color: #ff7f7f;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #e76d6d;
+}
+/* Contact Section */
+#contact {
+    background: linear-gradient(to bottom, #d7aefb, #fbc2eb); /* Same gradient as Home */
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff; /* White text for better contrast */
+    border-radius: 10px;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add subtle shadow to text */
+}
+
+.reach-out {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Match the style */
+}
+
+/* Form Styling */
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for inputs */
+}
+
+form textarea {
+    resize: none; /* Disable resizing */
+}
+
+form button {
+    background-color: #ff7f7f; /* Vibrant button color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: #e76d6d; /* Slightly darker on hover */
+}
+
+/* Fade-in Animation */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
